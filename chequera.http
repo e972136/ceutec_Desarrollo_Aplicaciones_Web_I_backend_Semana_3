@@ -1,0 +1,26 @@
+POST http://localhost:9090/api/chequera
+Content-Type: application/json
+
+{
+    "numero_cheque":"101",
+    "id_banco":2,
+    "a_nombre_de":"Batman",
+    "monto_cheque":100.00
+}
+
+####
+GET http://localhost:9090/api/chequera
+
+####
+PUT http://localhost:9090/api/chequera/2
+Content-Type: application/json
+
+{
+    "numero_cheque":"101",
+    "id_banco":2,
+    "a_nombre_de":"Robin",
+    "monto_cheque":1000.00
+}
+
+####
+DELETE http://localhost:9090/api/chequera/1
